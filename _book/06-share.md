@@ -20,6 +20,7 @@ Specify your book's source repository on GitHub as the `repo` in the `_output.ym
 
 Or use:
 
-```{r eval=FALSE}
+
+```r
 ?bookdown::bs4_book
 ```

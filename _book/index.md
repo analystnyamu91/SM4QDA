@@ -1,7 +1,7 @@
 ---
 title: "Statistical Methods for Quatitative Data Analysis"
 author: "Martin Nyamu"
-date: "`r Sys.Date()`"
+date: "2023-08-18"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
@@ -36,7 +36,8 @@ sessionInfo()
 
 We do not add prompts (\`\>\` and \`+\`) to R source code in this book, and we comment out the text output with two hashes \`##\` by default, as you can see from the R session information above. This is for your convenience when you want to copy and run the code (the text output will be ignored since it is commented out). Package names are in bold text (e.g., \*\*rmarkdown\*\*), and function names are followed by parentheses (e.g., \`bookdown::render_book()\`). The double-colon operator \`::\` means accessing an object from a package.
 
-```{r, eval=FALSE}
+
+```r
 bookdown::render_book()
 ```
 
@@ -44,13 +45,9 @@ bookdown::render_book()
 
 As you work, you may start a local server to live preview this HTML book. This preview will update as you edit the book when you save individual .Rmd files. You can start the server in a work session by using the RStudio add-in "Preview book", or from the R console:
 
-```{r eval=FALSE}
+
+```r
 bookdown::serve_book()
 ```
 
-```{r include=FALSE}
-# automatically create a bib database for R packages
-knitr::write_bib(c(
-  .packages(), 'bookdown', 'knitr', 'rmarkdown'
-), 'packages.bib')
-```
+
